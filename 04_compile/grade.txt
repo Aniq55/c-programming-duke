@@ -1,0 +1,7 @@
+Grading at Wed Sep 18 07:07:58 UTC 2019
+Compiling your code
+hello.c:1:0: error: ISO C forbids an empty translation unit [-Werror=pedantic]
+cc1: all warnings being treated as errors
+Your code did not compile
+
+Overall Grade: FAILED
