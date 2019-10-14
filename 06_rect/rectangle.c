@@ -50,7 +50,7 @@ rectangle intersection(rectangle r1, rectangle r2) {
 void printRectangle(rectangle r) {
   r = canonicalize(r);
   if (r.width == 0 && r.height == 0) {
-    printf("<empty>\n");
+    printf("no intersection\n");
   }
   else {
     printf("(%d,%d) to (%d,%d)\n", r.x, r.y, 
