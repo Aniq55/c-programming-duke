@@ -44,7 +44,10 @@ rectangle intersection(rectangle r1, rectangle r2) {
   r3.width = min(r1.x + r1.width, r2.x + r2.width) - r3.x;
   r3.y = max(r1.y, r2.y);
   r3.height = min(r1.y + r1.height, r2.y + r2.height) - r3.y;
-  r3 = canonicalize(r3);
+  if(r2.x - r1.x > r1.width || r1.x - r2.x > r2.width)
+    r3.width = 0;
+  if(r2.y - r1.y > r1.height || r1.y - r2.y > r2.height)
+    r3.height = 0;
   return r3;
 }
 
@@ -52,7 +55,7 @@ rectangle intersection(rectangle r1, rectangle r2) {
 void printRectangle(rectangle r) {
   r = canonicalize(r);
   if (r.width == 0 && r.height == 0) {
-    printf("no intersection\n");
+    printf("<empty>\n");
   }
   else {
     printf("(%d,%d) to (%d,%d)\n", r.x, r.y, 
