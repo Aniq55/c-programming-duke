@@ -1,0 +1,14 @@
+Grading at Tue Oct 15 18:38:42 UTC 2019
+Attempting to compile power.c
+power.c:4:1: error: unknown type name ‘uint32_t’
+ uint32_t power(uint32_t x, uint32_t y){
+ ^
+power.c:4:16: error: unknown type name ‘uint32_t’
+ uint32_t power(uint32_t x, uint32_t y){
+                ^
+power.c:4:28: error: unknown type name ‘uint32_t’
+ uint32_t power(uint32_t x, uint32_t y){
+                            ^
+The code did not compile!
+
+Overall Grade: F
