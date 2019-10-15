@@ -38,16 +38,23 @@ rectangle canonicalize(rectangle r) {
 rectangle intersection(rectangle r1, rectangle r2) {
   //WRITE THIS FUNCTION
   rectangle r3;
+
+  if((r1.x + r1.width < r2.x) || (r2.x + r2.width < r1.x) || (r1.y + r1.height < r2.y) || (r2.y + r2.height < r1.y)){
+    r3.x = 0;
+    r3.y = 0;
+    r3.width = 0;
+    r3.height = 0;
+
+    return r3;
+  }
+
+  
   r1 = canonicalize(r1);
   r2 = canonicalize(r2);
   r3.x = max(r1.x, r2.x);
   r3.width = min(r1.x + r1.width, r2.x + r2.width) - r3.x;
   r3.y = max(r1.y, r2.y);
   r3.height = min(r1.y + r1.height, r2.y + r2.height) - r3.y;
-  if(r2.x - r1.x >= r1.width || r1.x - r2.x >= r2.width)
-    r3.width = 0;
-  if(r2.y - r1.y >= r1.height || r1.y - r2.y >= r2.height)
-    r3.height = 0;
   return r3;
 }
 
