@@ -3,7 +3,11 @@
 #include <string.h>
 
 void reverse(char * str) {
+  if(str==NULL)
+    return;
+
   int l=0;
+  
   char *x = str;
   while(*x!='\0'){
     l++;
