@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-unsigned int  power(unsigned int x, unsigned int y){
+uint32_t power(uint32_t x, uint32_t y){
   if(x==0)
     return 0;
 
