@@ -1,0 +1,58 @@
+Grading at Tue Oct 15 11:39:30 UTC 2019
+Compiling cards.c
+Testing card_from_letters
+For card_from_letters('0','c'), I expected 0c but got 0s
+For card_from_letters('0','d'), I expected 0d but got 0s
+For card_from_letters('0','h'), I expected 0h but got 0d
+For card_from_letters('0','s'), I expected 0s but got 0h
+For card_from_letters('2','c'), I expected 2c but got 0s
+For card_from_letters('2','d'), I expected 2d but got 2c
+For card_from_letters('2','h'), I expected 2h but got 2d
+For card_from_letters('2','s'), I expected 2s but got 2h
+For card_from_letters('3','c'), I expected 3c but got 2s
+For card_from_letters('3','d'), I expected 3d but got 3c
+For card_from_letters('3','h'), I expected 3h but got 3d
+For card_from_letters('3','s'), I expected 3s but got 3h
+For card_from_letters('4','c'), I expected 4c but got 3s
+For card_from_letters('4','d'), I expected 4d but got 4c
+For card_from_letters('4','h'), I expected 4h but got 4d
+For card_from_letters('4','s'), I expected 4s but got 4h
+For card_from_letters('5','c'), I expected 5c but got 4s
+For card_from_letters('5','d'), I expected 5d but got 5c
+For card_from_letters('5','h'), I expected 5h but got 5d
+For card_from_letters('5','s'), I expected 5s but got 5h
+For card_from_letters('6','c'), I expected 6c but got 5s
+For card_from_letters('6','d'), I expected 6d but got 6c
+For card_from_letters('6','h'), I expected 6h but got 6d
+For card_from_letters('6','s'), I expected 6s but got 6h
+For card_from_letters('7','c'), I expected 7c but got 6s
+For card_from_letters('7','d'), I expected 7d but got 7c
+For card_from_letters('7','h'), I expected 7h but got 7d
+For card_from_letters('7','s'), I expected 7s but got 7h
+For card_from_letters('8','c'), I expected 8c but got 7s
+For card_from_letters('8','d'), I expected 8d but got 8c
+For card_from_letters('8','h'), I expected 8h but got 8d
+For card_from_letters('8','s'), I expected 8s but got 8h
+For card_from_letters('9','c'), I expected 9c but got 8s
+For card_from_letters('9','d'), I expected 9d but got 9c
+For card_from_letters('9','h'), I expected 9h but got 9d
+For card_from_letters('9','s'), I expected 9s but got 9h
+For card_from_letters('A','c'), I expected Ac but got 9s
+For card_from_letters('A','d'), I expected Ad but got Ac
+For card_from_letters('A','h'), I expected Ah but got Ad
+For card_from_letters('A','s'), I expected As but got Ah
+For card_from_letters('J','c'), I expected Jc but got As
+For card_from_letters('J','d'), I expected Jd but got Jc
+For card_from_letters('J','h'), I expected Jh but got Jd
+For card_from_letters('J','s'), I expected Js but got Jh
+For card_from_letters('K','c'), I expected Kc but got Js
+For card_from_letters('K','d'), I expected Kd but got Kc
+For card_from_letters('K','h'), I expected Kh but got Kd
+For card_from_letters('K','s'), I expected Ks but got Kh
+For card_from_letters('Q','c'), I expected Qc but got Ks
+For card_from_letters('Q','d'), I expected Qd but got Qc
+For card_from_letters('Q','h'), I expected Qh but got Qd
+For card_from_letters('Q','s'), I expected Qs but got Qh
+Failed
+
+Overall Grade: FAILED
