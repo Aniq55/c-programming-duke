@@ -1,17 +1,17 @@
-Grading at Tue Oct 15 16:58:09 UTC 2019
+Grading at Tue Oct 15 17:00:14 UTC 2019
 Attempting to compile maxSeq.c 
-maxSeq.c: In function ‘maxSeq’:
-maxSeq.c:30:10: error: ‘max’ undeclared (first use in this function)
-   return max;
-          ^
-maxSeq.c:30:10: note: each undeclared identifier is reported only once for each function it appears in
-maxSeq.c:8:10: error: unused variable ‘len’ [-Werror=unused-variable]
-   size_t len = 1;
-          ^
-maxSeq.c:31:1: error: control reaches end of non-void function [-Werror=return-type]
- }
- ^
-cc1: all warnings being treated as errors
-The code did not compile!
+Linking your object file with our test main
+#################################################
+testcase2:
+array size:0 was Correct
+#################################################
+testcase3:
+array size:1 was Correct
+#################################################
+testcase4:
+array size:100 was Correct
+#################################################
+testcase5:
+array size:5000 was Correct
 
-Overall Grade: F
+Overall Grade: A
