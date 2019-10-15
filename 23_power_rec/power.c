@@ -3,7 +3,7 @@
 
 unsigned int  power(unsigned int x, unsigned int y){
   if(x==0)
-    return 0;
+    return 1;
 
   if(y==0)
     return 1;
