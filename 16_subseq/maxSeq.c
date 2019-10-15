@@ -6,20 +6,26 @@ size_t maxSeq(int * array, size_t n){
     return 0;
 
   size_t len = 1;
-  for(size_t i=0; i<n; i++){
-    size_t temp_size = 0;
-    for(size_t j = i; j<n-1; j++){
-      if(array[j]<array[j+1])
-	temp_size++;
-      else{
-	if(temp_size > len)
-	  len = temp_size;
+  for(size_t i=1; i<n; i++){
+    if (n==0)
+      return 0;
 
-	i = j+1;
-	break;
-      }
+    size_t max = 1;
+    size_t current = 1;
+
+    
+    if (array[i] > array[i-1]) {
+      current += 1;
     }
+    else {
+      current = 1;
+    }
+
+    if (current > max) {
+      max = current;
+    }
+   
   }
 
-  return len;
+  return max;
 }
