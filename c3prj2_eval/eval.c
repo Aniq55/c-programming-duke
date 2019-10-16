@@ -70,7 +70,7 @@ ssize_t  find_secondary_pair(deck_t * hand,
 }
 
 
-int is_n_length_straight_at(deck_t * hand, size_t index, suit_t fs, int n){
+int is_n_straight_at(deck_t * hand, size_t index, suit_t fs, int n){
   size_t i = index;
 
   // check for mismatch and exhaustion of cards in hand
@@ -111,10 +111,10 @@ int is_straight_at(deck_t * hand, size_t index, suit_t fs) {
   int result = 0;
 
   if(hand->cards[index]->value != VALUE_ACE)
-    result = is_n_length_straight_at(hand, index, fs, 5);
+    result = is_n_straight_at(hand, index, fs, 5);
 
   else{
-    result=is_n_length_straight_at(hand,index,fs,5);
+    result=is_n_straight_at(hand,index,fs,5);
     if(result==0){
       // find another card with value 5
       size_t i = index;
@@ -126,7 +126,7 @@ int is_straight_at(deck_t * hand, size_t index, suit_t fs) {
       }    
   
       if(i<hand->n_cards){
-        return (-1)*is_n_length_straight_at(hand,i,fs,4);
+        return (-1)*is_n_straight_at(hand,i,fs,4);
       }
     }
   }
