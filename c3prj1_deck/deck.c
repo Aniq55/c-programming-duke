@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <assert.h>
 #include "deck.h"
+#include "cards.h"
+
 void print_hand(deck_t * hand){
   for(int i=0; i< hand->n_cards; i++){
     print_card(*hand->cards[i]);
@@ -22,8 +24,8 @@ void shuffle(deck_t * d){
   int j,k;
   int n_shuffle = d->n_cards*d->n_cards;
   for(int i=0; i<n_shuffle; i++){
-    j = random() % d->n_cards;
-    k = random() % d->n_cards;
+    j = (random()*random()) % d->n_cards;
+    k = (random()*random()) % d->n_cards;
     
     card_t *temp=d->cards[j];
     d->cards[j]=d->cards[k];
