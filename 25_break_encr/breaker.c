@@ -16,7 +16,7 @@ int main(int argc, char **argv){
   int arr[26] = {0};
   while (ch != EOF){  
     ch = fgetc(fptr);
-    arr[(int) (ch-'a')]++;
+    //arr[(int) (ch-'a')]++;
   }
 
   fclose(fptr);
