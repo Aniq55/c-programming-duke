@@ -8,11 +8,10 @@ int main(int argc, char **argv){
     return EXIT_FAILURE;
   }
   
-  char * filename = argv[1];
-  FILE *fptr = fopen(filename, "r");
+  FILE *fptr = fopen(argv[1], "r");
 
   if (fptr == NULL){
-    fprintf(stderr,"File not found\n");
+    fprintf(stderr,"Could not open file '%s'\n",argv[1]);
     return EXIT_FAILURE;
   }
 
