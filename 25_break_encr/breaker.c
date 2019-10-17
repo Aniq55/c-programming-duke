@@ -25,8 +25,6 @@ int main(int argc, char **argv){
       arr[(int)(ch-'a')]++;
   }
 
-  fclose(fptr);
-
   // find the character with highest frequency
   int max_pos = 0;
   for(int i=1; i<26; i++){
@@ -37,9 +35,12 @@ int main(int argc, char **argv){
   int val =  max_pos + 'a' - 'e';
 
   if(val<0)
-    val *= -1;
+    val+= 26;
 
   printf("%d\n", val);
-  
-  return 0;
+
+  if(fclosef(fptr)!=0)
+    return EXIT_FAILURE;
+
+  return EXIT_SUCCESS;
 }
