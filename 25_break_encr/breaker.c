@@ -8,7 +8,7 @@ int main(int argc, char **argv){
   FILE *fptr = fopen(filename, "r");
 
   if (fptr == NULL){
-    printf("File %s not found", filename);
+    printf("File not found");
     return EXIT_FAILURE;
   }
 
