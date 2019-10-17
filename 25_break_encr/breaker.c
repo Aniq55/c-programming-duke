@@ -4,16 +4,15 @@
 
 int main(int argc, char **argv){
   if(argc!=2){
-    fprintf(stderr,"Not enough arguments");
+    fprintf(stderr,"Not enough arguments\n");
     return EXIT_FAILURE;
   }
   
   char * filename = argv[1];
-
   FILE *fptr = fopen(filename, "r");
 
   if (fptr == NULL){
-    fprintf(stderr,"File not found");
+    fprintf(stderr,"File not found\n");
     return EXIT_FAILURE;
   }
 
@@ -39,7 +38,7 @@ int main(int argc, char **argv){
 
   fprintf(stdout, "%d\n", val);
 
-  if(fclosef(fptr)!=0)
+  if(fclose(fptr)!=0)
     return EXIT_FAILURE;
 
   return EXIT_SUCCESS;
