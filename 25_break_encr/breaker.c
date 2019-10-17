@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 int main(int argc, char **argv){
   char * filename = argv[1];
@@ -14,9 +15,9 @@ int main(int argc, char **argv){
   char ch;
 
   int arr[26] = {0};
-  while (!feof(fptr)){  
-    ch = fgetc(fptr);
-    arr[(int)(ch-'a')]++;
+  while((ch=fgetc(fptr))!=EOF){  
+    if(isalpha(ch))
+      arr[(int)(ch-'a')]++;
   }
 
   fclose(fptr);
