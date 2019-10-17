@@ -14,9 +14,9 @@ int main(int argc, char **argv){
   char ch;
 
   int arr[26] = {0};
-  while (ch != EOF){  
+  while (!feof(fptr)){  
     ch = fgetc(fptr);
-    //arr[(int) (ch-'a')]++;
+    arr[(int)(ch-'a')]++;
   }
 
   fclose(fptr);
