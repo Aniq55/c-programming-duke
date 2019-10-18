@@ -1,0 +1,10 @@
+file.txt
+01.txt
+02.txt
+03.txt
+04.txt
+05.txt
+06.txt
+01.txt 02.txt 03.txt
+1 2 3 4 5 6 7 8 9
+a b c d
