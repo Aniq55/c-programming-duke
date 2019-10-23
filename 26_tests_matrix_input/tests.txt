@@ -1,9 +1,9 @@
-test_0.txt
-test_1.txt
+
+fdsa
+zero fda we
+test1.txt
 test2.txt
 test3.txt
 test4.txt
 test5.txt
-
-1 2 3 4 5 6
-phi.txt
+test6.txt
