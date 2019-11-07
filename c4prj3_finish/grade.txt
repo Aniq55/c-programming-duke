@@ -1,4 +1,4 @@
-Grading at Thu Nov  7 12:12:31 UTC 2019
+Grading at Thu Nov  7 12:15:20 UTC 2019
 Running 'make clean' to do a clean build of your project
 rm -rf *.o poker *~
 Running 'make poker OTHERFLAGS=-O3' to build your project
@@ -50,12 +50,12 @@ Running a simulation with 40000 draws for 3 hands...
 *** Test case failed ***
  - Then one from a completely made up poker variant
 Running a simulation with 100000 draws for 6 hands...
-    Hand 0 was close enough to our answer
-    Hand 1 was close enough to our answer
- ** Hand 2 differed from our answer by -7.97%
-    Hand 3 was close enough to our answer
-    Hand 4 was close enough to our answer
- ** Hand 5 differed from our answer by 6.99%
-*** Test case failed ***
+Valgrind reported errors:
+==1458== Memcheck, a memory error detector
+==1458== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==1458== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==1458== Command: ./poker whacky.txt 100000
+==1458== Parent PID: 1457
+==1458== 
 
 Overall Grade: F
