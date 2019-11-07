@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include "cards.h"
 struct deck_tag {
-	  card_t ** cards;
-	    size_t n_cards;
+  card_t ** cards;
+  size_t n_cards;
 };
 typedef struct deck_tag deck_t;
 
@@ -19,4 +19,3 @@ card_t * add_empty_card(deck_t * deck);
 void free_deck(deck_t * deck) ;
 deck_t * build_remaining_deck(deck_t ** hands, size_t n_hands) ;
 #endif
-//

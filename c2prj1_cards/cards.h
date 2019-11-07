@@ -9,7 +9,7 @@ typedef enum {
   HEARTS,
   DIAMONDS,
   CLUBS,
-  NUM_SUITS
+    NUM_SUITS
 } suit_t;
 
 struct card_tag {
@@ -26,7 +26,7 @@ typedef enum {
   THREE_OF_A_KIND,
   TWO_PAIR,
   PAIR,
-  NOTHING
+    NOTHING
 } hand_ranking_t;
 card_t card_from_num(unsigned c);
 void assert_card_valid(card_t c);
